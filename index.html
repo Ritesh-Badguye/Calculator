@@ -1,0 +1,67 @@
+<Html>
+    <HEAD>
+        <link href="Calculator.css" rel="stylesheet">
+        <SCRIPT>
+            function number(buttonvalue)
+            {
+                var f1 = document.getElementById("field");
+                f1.value += buttonvalue;
+            }
+            function logic()
+            {
+                var f1 = document.getElementById("field");
+                f1.value = eval(f1.value);
+            }
+        </SCRIPT>
+    </HEAD>
+    <body>
+        <center>
+        <table bgcolor=#eeeeee cellspacing="4" cellpadding="3" border>
+            
+            <tr>
+                <td align="center">Calculator</td>
+            </tr>
+
+            <tr>
+                <td><input type=text size=12 id="field" /></td>
+            </tr>
+
+            <tr>
+                <td id="A1">
+                    <input type=button id="S1" value= "1" onclick="number('1');"/>
+                    <input type=button id="S1" value= "2" onclick="number('2');"/>
+                    <input type=button id="S1" value= "3" onclick="number('3');"/>
+                    <input type=button id="S1" value= "+" onclick="number('+');"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td id="A1">
+                    <input type=button id="S1" value= "4" onclick="number('4');"/>
+                    <input type=button id="S1" value= "5" onclick="number('5');"/>
+                    <input type=button id="S1" value= "6" onclick="number('6');"/>
+                    <input type=button id="S1" value= "-" onclick="number('-');"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td id="A1">
+                    <input type=button id="S1" value= "7" onclick="number('7');"/>
+                    <input type=button id="S1" value= "8" onclick="number('8');"/>
+                    <input type=button id="S1" value= "9" onclick="number('9');"/>
+                    <input type=button id="S1" value= "*" onclick="number('*');"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td id="A1">
+                    <input type=button id="S1" value= "0" onclick="number('0');"/>
+                    <input type=button id="S1" value= "." onclick="number('.');"/>
+                    <input type=button id="S1" value= "/" onclick="number('/');"/>
+                    <input type=button id="S1" value= "=" onclick="logic();"/>
+                </td>
+            </tr>
+        </table>
+    </center>
+    </body>
+</Html>

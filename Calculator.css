@@ -1,0 +1,15 @@
+#S1{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: snow;
+    background-color: grey;
+    padding: 5px;
+    padding-bottom: 5px;
+    margin: 2px;
+    border: none;
+}
+
+#A1{
+    padding: 10px;
+}
